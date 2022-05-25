@@ -1,44 +1,69 @@
 :root {
-    --text-title-color: #212121;
-    --text-h2-color: #757575;
+  --text-title-color: #212121;
+  --text-h2-color: #757575;
 }
 
 body {
-    font-family: "Roboto";
-    color: var(--text-h2-color);
+  font-family: 'Roboto';
+  color: var(--text-h2-color);
 }
 
 .logo {
-    font-family: "Raleway";
-    color: #2196F3;
-    text-decoration: none;
+  font-family: 'Raleway';
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.nav-header {
+}
+
+.nav-header-href {
+  line-height: 1.14;
+  text-decoration: none;
 }
 
 .logo-font-footer {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .studio-header {
-    color: #000000;
+  color: #000000;
 }
 
 .studio-footer {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .title-h1-fons {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .title-h1 {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .titles {
-    color: var(--text-title-color);
+  color: var(--text-title-color);
 }
 
 .ul {
-    text-decoration: none;
-    list-style-type: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.text-color-footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-footer{
+font-size: 14px;
+line-height: 1.71;
+
+color: #FFFFFF;
+
 }
