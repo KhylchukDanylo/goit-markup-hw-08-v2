@@ -1,0 +1,44 @@
+:root {
+    --text-title-color: #212121;
+    --text-h2-color: #757575;
+}
+
+body {
+    font-family: "Roboto";
+    color: var(--text-h2-color);
+}
+
+.logo {
+    font-family: "Raleway";
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.logo-font-footer {
+    background-color: #2F303A;
+}
+
+.studio-header {
+    color: #000000;
+}
+
+.studio-footer {
+    color: #ffffff;
+}
+
+.title-h1-fons {
+    background-color: #2F303A;
+}
+
+.title-h1 {
+    color: #FFFFFF;
+}
+
+.titles {
+    color: var(--text-title-color);
+}
+
+.ul {
+    text-decoration: none;
+    list-style-type: none;
+}
