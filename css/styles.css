@@ -96,6 +96,10 @@ body {
   color: #ffffff;
 }
 
+.list {
+  list-style-type: none;
+}
+
 .subtitle-features {
   font-weight: 700;
   font-size: 14px;
@@ -132,6 +136,14 @@ body {
   background-color: #f5f4fa;
 }
 
+.team-photo-fon {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+}
+
 .subtitle-team {
   font-weight: 700;
   font-size: 36px;
@@ -146,6 +158,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--title-text-color);
 }
@@ -155,6 +168,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* -------------------footer------------------- */
@@ -201,6 +215,16 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.btn-all {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
 }
 
 /* -------------------product list------------------- */
@@ -219,7 +243,29 @@ body {
 
 .name-sort {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+.product-fon {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  width: 370px;
+}
+
+.snare-focus:hover {
+  color: #2196f3;
+}
+
+.snare-focus:focus {
+  color: #2196f3;
+}
+
+.footer-contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
