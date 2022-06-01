@@ -11,11 +11,22 @@ body {
   background-color: var(--color-white);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 /* -------------------header--------------------- */
 
 /* -------------------logo------------------- */
 
 .logo {
+  display: block;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -25,19 +36,62 @@ body {
 
   color: #2196f3;
   text-decoration: none;
+  padding-top: 38px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .studio-header {
   color: #000000;
 }
 
+.logo-fon-header {
+  border-bottom-style: 2px solid #ECECEC;
+}
+
+/* ---------------hidden-------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* -------------------navigation------------------- */
 
+.logo-font-header {
+  /* border-bottom: 1px solid #ECECEC; */
+}
+
+.containter {
+  width: 1055px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 80px;
+}
+
+.nav-blok {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ECECEC;
+}
+
 .navigation-list {
+  display: flex;
   list-style-type: none;
 }
 
 .nav-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -45,13 +99,23 @@ body {
 
   color: var(--title-text-color);
   text-decoration: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation-list .nav-item + .nav-item {
+  margin-left: 50px;
 }
 
 .contacts-header-list {
   list-style-type: none;
+  display: flex;
+  margin-left: auto;
 }
 
 .nav-contact {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -59,6 +123,13 @@ body {
 
   color: #757575;
   text-decoration: none;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-header-list .cnt-item + .cnt-item {
+  margin-left: 50px;
 }
 
 .portfolio-color-active,
@@ -69,11 +140,26 @@ body {
 
 /* -------------------h1------------------- */
 
-.sct-main-title {
-  background-color: #2f303a;
+.containter-maim-title {
+  display: flex;
+  flex-direction: column;
 }
 
-.mein-title {
+.sct-main-title {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+  margin-top: 32px;
+}
+
+.main-title {
+  display: flex;
+  padding-top: 200px;
+  margin-bottom: 30px;
+  justify-content: center;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -85,6 +171,7 @@ body {
 }
 
 .main-btn {
+  display: block;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -96,10 +183,30 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--color-white);
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -----------features----------- */
+
+.containter-features {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
 }
 
 .list {
   list-style-type: none;
+}
+
+.features-list {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .subtitle-features {
@@ -109,6 +216,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.features-list .item-fut + .item-fut {
+  margin-left: 30px;
+
 }
 
 .text-features {
@@ -121,6 +234,9 @@ body {
 
 .list-photo {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .subtitle-technology {
@@ -130,12 +246,32 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.list-photo .item-list-techn + .item-list-techn {
+  margin-left: 30px;
+}
+
+.item-list-techn {
+  margin-bottom: 94px;
 }
 
 /* -------------------Наша команда------------------- */
 
+.ctn-team {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .sct-team {
+  max-width: 1600px;
   background-color: #f5f4fa;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-photo-fon {
@@ -144,6 +280,11 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
+  margin-bottom: 94px;
+}
+
+.list-photo .team-photo-fon + .team-photo-fon {
+  margin-left: 30px;
 }
 
 .subtitle-team {
@@ -153,6 +294,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .subtitle-name-team {
@@ -163,6 +306,13 @@ body {
   text-align: center;
 
   color: var(--title-text-color);
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.photo-team-scr {
+  display: block;
 }
 
 .direction-team {
@@ -171,12 +321,35 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 /* -------------------footer------------------- */
 
 .logo-font-footer {
   background-color: #2f303a;
+  max-width: 1600px;
+  height: 252px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.logo-footer {
+  display: block;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+  text-decoration: none;
+  margin-left: 20px;
+  padding-top: 60px;
+  margin-bottom: 20px;
+  max-width: 160px;
 }
 
 .studio-footer {
@@ -190,6 +363,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-white);
+  margin-left: 20px;
+  margin-bottom: 9px;
 }
 
 .footer-contact-list {
@@ -200,6 +375,23 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   list-style-type: none;
+  margin-left: -20px;
+}
+.ctn-footer {
+  width: 1170px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+justify-content: flex-start;
+}
+
+.email-footer {
+  margin-top: 9px;
+}
+
+.tell-footer {
+  margin-top: 9px;
+  margin-bottom: 60px
 }
 
 /* -------------------portfolio------------------- */
@@ -207,7 +399,22 @@ body {
 /* -------------------sort------------------- */
 
 .portfolio-button-list {
+  display: flex;
   list-style-type: none;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-top: 94px;
+}
+.portfolio-button-list .list-btn + .list-btn {
+  margin-left: 8px;
+}
+
+.portfolio-sort-btn-cnt {
+  width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn-all {
@@ -236,7 +443,7 @@ body {
 
   text-align: center;
   letter-spacing: 0.03em;
-cursor: pointer;
+  cursor: pointer;
   color: var(--title-text-color);
 }
 
@@ -258,8 +465,26 @@ cursor: pointer;
 /* -------------------product list------------------- */
 
 .product-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+
 }
+
+.product-list-photo {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.product-list-photo:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.product-list-photo:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+
 
 .subtitle-product {
   font-weight: 700;
@@ -267,6 +492,13 @@ cursor: pointer;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.photo-img {
+  display: block;
 }
 
 .name-sort {
@@ -274,6 +506,9 @@ cursor: pointer;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin-top: 4xp;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 .product-fon {
   background: var(--color-white);
@@ -296,4 +531,33 @@ cursor: pointer;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.ctn-footer-portfolio {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 190px;
+}
+
+.actual-address-portfolio {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+  margin-left: 20px;
+  margin-bottom: 9px;
+}
+
+.footer-contact-list-portfolio {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  list-style-type: none;
+  margin-left: -20px;
 }
