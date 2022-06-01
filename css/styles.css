@@ -66,8 +66,8 @@ p {
 
 /* -------------------navigation------------------- */
 
-.logo-font-header {
-  /* border-bottom: 1px solid #ECECEC; */
+.logo-font-header-border {
+  border-bottom: 1px solid #ECECEC;
 }
 
 .containter {
@@ -82,7 +82,6 @@ p {
 .nav-blok {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #ECECEC;
 }
 
 .navigation-list {
