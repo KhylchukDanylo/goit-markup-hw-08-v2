@@ -46,7 +46,7 @@ p {
 }
 
 .logo-fon-header {
-  border-bottom-style: 2px solid #ECECEC;
+  border-bottom-style: 2px solid #ececec;
 }
 
 /* ---------------hidden-------- */
@@ -67,11 +67,11 @@ p {
 /* -------------------navigation------------------- */
 
 .logo-font-header-border {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .containter {
-  width: 1055px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -82,6 +82,7 @@ p {
 .nav-blok {
   display: flex;
   justify-content: center;
+  max-height: 80px;
 }
 
 .navigation-list {
@@ -125,6 +126,7 @@ p {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
 }
 
 .contacts-header-list .cnt-item + .cnt-item {
@@ -150,14 +152,14 @@ p {
   margin-left: auto;
   margin-right: auto;
   background-color: #2f303a;
-  margin-top: 32px;
 }
 
 .main-title {
   display: flex;
   padding-top: 200px;
   margin-bottom: 30px;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -165,6 +167,7 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 700px;
 
   color: var(--color-white);
 }
@@ -195,7 +198,6 @@ p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
 }
 
 .list {
@@ -220,7 +222,6 @@ p {
 
 .features-list .item-fut + .item-fut {
   margin-left: 30px;
-
 }
 
 .text-features {
@@ -331,7 +332,7 @@ p {
   height: 252px;
   margin-left: auto;
   margin-right: auto;
-  
+  margin-top: 94px;
 }
 
 .logo-footer {
@@ -378,10 +379,10 @@ p {
 }
 .ctn-footer {
   width: 1170px;
-margin-left: auto;
-margin-right: auto;
-display: block;
-justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  justify-content: flex-start;
 }
 
 .email-footer {
@@ -390,7 +391,7 @@ justify-content: flex-start;
 
 .tell-footer {
   margin-top: 9px;
-  margin-bottom: 60px
+  margin-bottom: 60px;
 }
 
 /* -------------------portfolio------------------- */
@@ -467,7 +468,6 @@ justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-
 }
 
 .product-list-photo {
@@ -482,8 +482,6 @@ justify-content: flex-start;
 .product-list-photo:nth-child(n + 7) {
   margin-bottom: 0;
 }
-
-
 
 .subtitle-product {
   font-weight: 700;
@@ -536,7 +534,6 @@ justify-content: flex-start;
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  margin-left: 190px;
 }
 
 .actual-address-portfolio {
