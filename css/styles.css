@@ -17,6 +17,8 @@ h3,
 h4,
 h5,
 h6,
+ul,
+li,
 p {
   margin: 0;
 }
@@ -36,7 +38,7 @@ p {
 
   color: #2196f3;
   text-decoration: none;
-  padding-top: 38px;
+  padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
 }
@@ -71,12 +73,11 @@ p {
 }
 
 .containter {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  height: 80px;
 }
 
 .nav-blok {
@@ -88,6 +89,7 @@ p {
 .navigation-list {
   display: flex;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .nav-link {
@@ -126,7 +128,6 @@ p {
 
   padding-top: 32px;
   padding-bottom: 32px;
-
 }
 
 .contacts-header-list .cnt-item + .cnt-item {
@@ -141,22 +142,21 @@ p {
 
 /* -------------------h1------------------- */
 
-.containter-maim-title {
-  display: flex;
-  flex-direction: column;
-}
+/* .containter-maim-title {
+
+} */
 
 .sct-main-title {
-  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #2f303a;
+  padding: 200px 0;
 }
 
 .main-title {
   display: flex;
-  padding-top: 200px;
+  /* padding-top: 200px; */
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -192,12 +192,8 @@ p {
 
 /* -----------features----------- */
 
-.containter-features {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.features {
+  padding: 94px 0;
 }
 
 .list {
@@ -206,8 +202,6 @@ p {
 
 .features-list {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .subtitle-features {
@@ -230,7 +224,16 @@ p {
   letter-spacing: 0.03em;
 }
 
+.item-fut {
+  width: 270px;
+  height: 101px;
+}
+
 /* -------------------Чем мы занимаемся------------------- */
+
+.sct-technology {
+  padding-bottom: 94px;
+}
 
 .list-photo {
   list-style-type: none;
@@ -253,22 +256,13 @@ p {
   margin-left: 30px;
 }
 
-.item-list-techn {
-  margin-bottom: 94px;
-}
+/* .item-list-techn {
+} */
 
 /* -------------------Наша команда------------------- */
 
-.ctn-team {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .sct-team {
-  max-width: 1600px;
+  padding: 94px 0;
   background-color: #f5f4fa;
   margin-left: auto;
   margin-right: auto;
@@ -280,7 +274,6 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-  margin-bottom: 94px;
 }
 
 .list-photo .team-photo-fon + .team-photo-fon {
@@ -294,7 +287,6 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -328,10 +320,10 @@ p {
 
 .logo-font-footer {
   background-color: #2f303a;
-  max-width: 1600px;
-  height: 252px;
+  /* max-width: 1600px; */
   margin-left: auto;
   margin-right: auto;
+  padding: 60px 0;
 }
 
 .logo-footer {
@@ -345,10 +337,9 @@ p {
 
   color: #2196f3;
   text-decoration: none;
-  margin-left: 20px;
-  padding-top: 60px;
+
   margin-bottom: 20px;
-  max-width: 160px;
+
 }
 
 .studio-footer {
@@ -362,7 +353,6 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-white);
-  margin-left: 20px;
   margin-bottom: 9px;
 }
 
@@ -374,15 +364,13 @@ p {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   list-style-type: none;
-  margin-left: -20px;
+  padding: 0;
 }
-.ctn-footer {
-  width: 1170px;
+/* .ctn-footer {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  justify-content: flex-start;
-}
+} */
 
 .email-footer {
   margin-top: 9px;
@@ -390,30 +378,24 @@ p {
 
 .tell-footer {
   margin-top: 9px;
-  margin-bottom: 60px;
 }
 
 /* -------------------portfolio------------------- */
 
 /* -------------------sort------------------- */
 
+.sct-main-portfolio {
+  padding: 94px 0;
+}
+
 .portfolio-button-list {
   display: flex;
   list-style-type: none;
   justify-content: center;
   margin-bottom: 34px;
-  margin-top: 94px;
 }
 .portfolio-button-list .list-btn + .list-btn {
   margin-left: 8px;
-}
-
-.portfolio-sort-btn-cnt {
-  width: 1260px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .btn-all {
@@ -457,7 +439,6 @@ p {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--color-white);
 }
 
@@ -467,11 +448,15 @@ p {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  margin-left: -20px;
+  margin-bottom: -20px;
 }
 
 .product-list-photo {
-  margin-bottom: 30px;
-  margin-left: 30px;
+flex-basis: calc((100% - 60px) / 9);
+margin-left: 20px;
+margin-bottom: 20px;
+
 }
 
 .product-list-photo:nth-child(3n + 1) {
@@ -488,8 +473,6 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-
-  margin-top: 20px;
   margin-left: 24px;
 }
 
@@ -508,8 +491,10 @@ p {
 }
 .product-fon {
   background: var(--color-white);
-  border: 1px solid #eeeeee;
-  width: 370px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding-top: 20px;
 }
 
 .snare-focus:hover {
@@ -527,32 +512,4 @@ p {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-}
-
-.ctn-footer-portfolio {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.actual-address-portfolio {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--color-white);
-  margin-left: 20px;
-  margin-bottom: 9px;
-}
-
-.footer-contact-list-portfolio {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  list-style-type: none;
-  margin-left: -20px;
 }
