@@ -23,6 +23,10 @@ p {
   margin: 0;
 }
 
+ul {
+  padding: 0;
+}
+
 /* -------------------header--------------------- */
 
 /* -------------------logo------------------- */
@@ -185,7 +189,8 @@ p {
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--color-white);
-  max-width: 200px;
+  width: 200px;
+  height: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -353,7 +358,6 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-white);
-  margin-bottom: 9px;
 }
 
 .footer-contact-list {
@@ -412,6 +416,7 @@ p {
 
   color: var(--color-white);
   cursor: pointer;
+  padding: 6px 22px;
 }
 
 .sort-btn-text {
@@ -426,6 +431,8 @@ p {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--title-text-color);
+
+  padding: 6px 22px;
 }
 
 .sort-btn-text:hover,
@@ -473,7 +480,7 @@ margin-bottom: 20px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin-left: 24px;
+  margin-bottom: 4px;
 }
 
 .photo-img {
@@ -486,15 +493,13 @@ margin-bottom: 20px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   margin-top: 4xp;
-  margin-left: 24px;
-  margin-bottom: 20px;
 }
 .product-fon {
   background: var(--color-white);
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  padding-top: 20px;
+  padding: 20px 24px;
 }
 
 .snare-focus:hover {
