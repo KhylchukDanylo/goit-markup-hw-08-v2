@@ -432,6 +432,8 @@ ul {
   fill: var(--list-active-color);
 }
 
+.customers-item:hover .
+
 /* -------------------footer------------------- */
 
 .logo-font-footer {
@@ -524,16 +526,20 @@ margin-bottom: 20px;
 }
 
 .item-soc-footer {
-  width: 44px;
-  height: 44px;
-}
-
-.item-soc-footer {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.link-icon-soc-footer {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .item-soc-footer:hover,
