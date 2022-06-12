@@ -442,26 +442,6 @@ ul {
   fill: #AFB1B8;
 }
 
-/* .customers-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.customers-item {
-  display: flex;
-}
-
-.link-icon-logo {
-  padding: 16px 32px;
-  border: 1px solid #afb1b8;
-  border-radius: 5%;
-} */
-
-
-
-
-
 /* -------------------footer------------------- */
 
 .studio-footer {
@@ -671,7 +651,6 @@ ul {
 .active-blok:hover,
 .active-blok:focus {
   background: #FFFFFF;
-/* border: 1px solid #EEEEEE; */
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
