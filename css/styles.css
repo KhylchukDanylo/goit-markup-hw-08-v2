@@ -331,6 +331,8 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--color-white);
   bottom: 0;
+
+  text-transform: uppercase;
 }
 
 /* -------------------Наша команда------------------- */
@@ -530,7 +532,7 @@ ul {
 
 .footer-flex {
   display: flex;
-  align-items: bo;
+  align-items: baseline;
 }
 
 .actual-address {
@@ -578,7 +580,6 @@ ul {
 
 .join {
   margin-left: 70px;
-  margin-top: 13px;
 }
 
 .subtitle-join {
@@ -708,7 +709,6 @@ ul {
   flex-wrap: wrap;
   list-style-type: none;
   margin-left: -30px;
-  margin-bottom: -30px;
 }
 
 .product-list-photo {
@@ -735,9 +735,7 @@ ul {
 }
 
 .active-blok .product-description {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms;
 }
 
 .active-blok:hover .product-description,
@@ -815,6 +813,8 @@ ul {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
