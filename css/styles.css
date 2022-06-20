@@ -525,10 +525,11 @@ ul {
   text-decoration: none;
 
   margin-bottom: 20px;
+  width: 135px;
 }
-/* .nav-footer {
-  max-width: 231px;
-} */
+.addres-footer {
+  width: 231px;
+}
 
 .footer-flex {
   display: flex;
@@ -632,6 +633,10 @@ ul {
   margin-left: 10px;
 }
 /* --------------Подпишитесь на рассылку------------ */
+
+.join-Subscribe {
+  margin-left: 93px;
+}
 
 .form-imput {
   width: 358px;
@@ -997,9 +1002,6 @@ ul {
   fill: var(--list-active-color);
 }
 
-.input-modal-list {
-  border: ;
-}
 .coment-modal {
   resize: none;
   width: 448px;
@@ -1023,38 +1025,6 @@ ul {
 .coment-modal:active {
   border: 1px solid #2196f3;
   border-radius: 4px;
-}
-
-.checkbox-contract {
-  position: relative;
-  padding-left: 25px;
-}
-
-.icon-checkbox {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.checkbox-contract:checked + .contract {
-  background-image: url(/images/iconcheck1.svg);
-}
-
-.contract {
-  position: absolute;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  /* identical to box height, or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: #757575;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .link-contract {
@@ -1094,4 +1064,73 @@ ul {
 
 .btn-modal-end:hover {
   cursor: pointer;
+}
+
+/* --------------check------------------ */
+
+.check {
+  padding-left: 25px;
+  position: relative;
+}
+
+.check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.check:hover .check-box-icon,
+.check:focus .check-box-icon {
+  fill: var(--list-active-color);
+}
+
+.check-box {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url(/images/off.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  margin-left: -25px;
+}
+
+.check-input:checked + .check-box {
+  background-image: url(/images/on.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* .check-input:focus + .check-box {
+  background-image: url(/images/off-hover.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
+
+.check-link {
+  color: #2196f3;
+  text-decoration: none;
+}
+.check-link::after {
+  content: '';
+  width: 140px;
+  height: 1px;
+  background-color: var(--list-active-color);
+  display: block;
+  border-radius: 4px;
+  position: absolute;
+  top: 17px;
+  bottom: 0;
+  right: 0;
 }
