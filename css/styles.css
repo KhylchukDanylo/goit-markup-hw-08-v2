@@ -935,10 +935,13 @@ ul {
 }
 
 .content-modal {
-  display: inline-block;
+  margin: 40px auto 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px auto 0 auto;
 }
 
 .name-imput-modal {
@@ -951,14 +954,6 @@ ul {
 
   color: #757575;
   margin-bottom: 4px;
-}
-
-.content-modal {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .input-modal-item {
@@ -1047,7 +1042,7 @@ ul {
 
   display: flex;
   align-items: center;
-  text-align: center;
+
   letter-spacing: 0.06em;
 
   color: #ffffff;
@@ -1058,7 +1053,7 @@ ul {
   border-radius: 4px;
 
   padding: 10px 56px;
-
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 
@@ -1090,6 +1085,22 @@ ul {
   color: #757575;
 }
 
+.check-link {
+  color: var(--list-active-color);
+  text-decoration: none;
+}
+.check-link::after {
+  content: '';
+  width: 140px;
+  height: 1px;
+  background-color: var(--list-active-color);
+  display: block;
+  position: absolute;
+  top: 17px;
+  bottom: 0;
+  right: 0;
+}
+
 .check:hover .check-box-icon,
 .check:focus .check-box-icon {
   fill: var(--list-active-color);
@@ -1112,25 +1123,14 @@ ul {
   background-size: contain;
 }
 
-/* .check-input:focus + .check-box {
-  background-image: url(/images/off-hover.svg);
+.check-input:checked + .check-box {
+  background-image: url(/images/on.svg);
   background-repeat: no-repeat;
   background-size: contain;
-} */
+}
 
-.check-link {
-  color: #2196f3;
-  text-decoration: none;
-}
-.check-link::after {
-  content: '';
-  width: 140px;
-  height: 1px;
-  background-color: var(--list-active-color);
-  display: block;
-  border-radius: 4px;
-  position: absolute;
-  top: 17px;
-  bottom: 0;
-  right: 0;
-}
+
+
+
+
+
