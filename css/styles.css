@@ -1025,16 +1025,9 @@ ul {
   border-radius: 4px;
 }
 
-.contract {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .checkbox-contract {
   position: relative;
-  margin-left: 20px;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .icon-checkbox {
@@ -1043,7 +1036,13 @@ ul {
   left: 0;
 }
 
+.checkbox-contract:checked + .contract {
+  background-image: url(/images/iconcheck1.svg);
+}
+
 .contract {
+  position: absolute;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -1052,6 +1051,10 @@ ul {
   letter-spacing: 0.03em;
 
   color: #757575;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .link-contract {
