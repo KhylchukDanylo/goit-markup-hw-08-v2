@@ -656,10 +656,15 @@ ul {
 
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+  outline: transparent;
 }
 
-.form-imput:active {
-  background-color: #2f303a;
+.form-imput:hover,
+.form-imput:active,
+.form-imput:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+
 }
 
 .mail-btn-post {
@@ -672,7 +677,6 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 188% */
 
   display: flex;
   align-items: center;
@@ -942,23 +946,16 @@ ul {
   margin-bottom: 12px;
 }
 
-/* .content-modal {
-} */
-
 .name-imput-modal {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  /* identical to box height */
 
   letter-spacing: 0.01em;
 
   color: #757575;
   margin-bottom: 4px;
 }
-
-/* .input-modal-item {
-} */
 
 .name {
   position: relative;
