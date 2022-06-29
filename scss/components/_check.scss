@@ -1,0 +1,63 @@
+.modal-check {
+  position: relative;
+
+  display: block;
+  text-align: center;
+
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+
+  max-height: 24px;
+}
+
+.check-icon {
+  position: absolute;
+  top: 15%;
+  left: 8px;
+}
+
+.check-text {
+  padding-left: 24px;
+}
+
+.link-check {
+  color: var(--list-active-color);
+}
+
+.input-check {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  top: 60%;
+  left: 16px;
+}
+
+.check-icon-off {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-icon-on {
+  display: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-check:checked + .check-text .check-icon-off {
+  display: none;
+}
+
+.input-check:checked + .check-text .check-icon-on {
+  display: block;
+}
+
+.input-check:hover + .check-text svg,
+.input-check:focus + .check-text svg {
+  fill: var(--list-active-color);
+}

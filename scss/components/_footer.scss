@@ -1,0 +1,68 @@
+.studio-footer {
+  color: var(--color-white);
+}
+
+.logo-footer {
+  display: block;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+  text-decoration: none;
+
+  margin-bottom: 20px;
+  width: 135px;
+}
+.addres-footer {
+  width: 231px;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.actual-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+}
+
+.footer-contact-list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  list-style-type: none;
+  padding: 0;
+}
+/* .ctn-footer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.email-footer {
+  margin-top: 9px;
+}
+
+.tell-footer {
+  margin-top: 9px;
+}
+
+.logo-font-footer {
+  background-color: #2f303a;
+  /* max-width: 1600px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0;
+}

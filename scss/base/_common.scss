@@ -1,0 +1,16 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--color-white);
+}
+
+.snare-focus {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.snare-focus:hover,
+.snare-focus:focus {
+  color: var(--list-active-color);
+}
