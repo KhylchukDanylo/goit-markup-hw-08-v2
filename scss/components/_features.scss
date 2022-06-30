@@ -2,15 +2,11 @@
   padding: 94px 0;
 }
 
-.list {
-  list-style-type: none;
-}
-
 .features-list {
   display: flex;
 }
 
-.subtitle-features {
+.features-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -20,21 +16,21 @@
   margin-bottom: 10px;
 }
 
-.features-list .item-fut + .item-fut {
+.features-list .features-item + .features-item {
   margin-left: 30px;
 }
 
-.text-features {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.item-fut {
+.features-item {
   width: 270px;
 }
 
-.background-icon-fut {
+.features-icon {
   display: flex;
   align-items: center;
   justify-content: center;

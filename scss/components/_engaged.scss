@@ -1,15 +1,15 @@
-.sct-technology {
+.technology {
   padding-bottom: 94px;
 }
 
-.list-photo {
+.technology-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
   margin: 0;
 }
 
-.subtitle-technology {
+.technology-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -19,18 +19,18 @@
   margin-bottom: 50px;
 }
 
-.list-photo .item-list-techn + .item-list-techn {
+.technology-list .technology-item + .technology-item {
   margin-left: 30px;
 }
-.img-technology {
+.technology-img {
   display: block;
 }
 
-.item-list-techn {
+.technology-item {
   position: relative;
 }
 
-.name-app {
+.technology-name {
   display: flex;
   position: absolute;
   align-items: center;

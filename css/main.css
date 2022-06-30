@@ -74,7 +74,7 @@ ul {
   margin-right: 93px;
 }
 
-.studio-header {
+.logo-studio {
   color: #000000;
 }
 
@@ -170,7 +170,7 @@ ul {
   bottom: -1px;
 }
 
-.sct-main-title {
+.title {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -183,7 +183,7 @@ ul {
   max-width: 1600px;
 }
 
-.main-title {
+.title-main {
   display: flex;
   /* padding-top: 200px; */
   margin-bottom: 30px;
@@ -199,7 +199,7 @@ ul {
   color: var(--color-white);
 }
 
-.main-btn {
+.title-btn {
   display: block;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -222,15 +222,11 @@ ul {
   padding: 94px 0;
 }
 
-.list {
-  list-style-type: none;
-}
-
 .features-list {
   display: flex;
 }
 
-.subtitle-features {
+.features-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -240,21 +236,21 @@ ul {
   margin-bottom: 10px;
 }
 
-.features-list .item-fut + .item-fut {
+.features-list .features-item + .features-item {
   margin-left: 30px;
 }
 
-.text-features {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.item-fut {
+.features-item {
   width: 270px;
 }
 
-.background-icon-fut {
+.features-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,18 +259,18 @@ ul {
   margin-bottom: 30px;
 }
 
-.sct-technology {
+.technology {
   padding-bottom: 94px;
 }
 
-.list-photo {
+.technology-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
   margin: 0;
 }
 
-.subtitle-technology {
+.technology-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -284,19 +280,19 @@ ul {
   margin-bottom: 50px;
 }
 
-.list-photo .item-list-techn + .item-list-techn {
+.technology-list .technology-item + .technology-item {
   margin-left: 30px;
 }
 
-.img-technology {
+.technology-img {
   display: block;
 }
 
-.item-list-techn {
+.technology-item {
   position: relative;
 }
 
-.name-app {
+.technology-name {
   display: flex;
   position: absolute;
   align-items: center;
@@ -309,7 +305,7 @@ ul {
   text-transform: uppercase;
 }
 
-.sct-team {
+.team {
   padding: 94px 0;
   background-color: #f5f4fa;
   margin-left: auto;
@@ -321,18 +317,22 @@ ul {
   align-items: center;
 }
 
-.team-photo-fon {
+.team-list {
+  display: flex;
+}
+
+.team-item-photo {
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
 
-.list-photo .team-photo-fon + .team-photo-fon {
+.team-list .team-item-photo + .team-item-photo {
   margin-left: 30px;
 }
 
-.subtitle-team {
+.team-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -342,7 +342,7 @@ ul {
   margin-bottom: 50px;
 }
 
-.subtitle-name-team {
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -353,11 +353,11 @@ ul {
   margin-bottom: 10px;
 }
 
-.photo-team-scr {
+.team-photo {
   display: block;
 }
 
-.direction-team {
+.team-direction {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -366,17 +366,17 @@ ul {
   margin-bottom: 16px;
 }
 
-.icon-soc-team {
+.team-icon-list {
   display: flex;
   justify-content: center;
 }
 
-.icon-team-item {
+.team-item-icon {
   width: 44px;
   height: 44px;
 }
 
-.icon-team-link {
+.team-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,33 +385,33 @@ ul {
   border-radius: 50%;
 }
 
-.icon-team-link {
+.team-link {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-icon {
+.team-icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-team-link:hover,
-.icon-team-link:focus {
+.team-link:hover,
+.team-link:focus {
   background-color: var(--list-active-color);
 }
 
-.soc-icon {
+.team-icon {
   fill: #afb1b8;
 }
 
-.icon-team-link:hover .soc-icon,
-.icon-team-link:focus .soc-icon {
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
   fill: var(--color-white);
 }
 
-.icon-soc-team .icon-team-item + .icon-team-item {
+.team-icon-list .team-item-icon + .team-item-icon {
   margin-left: 10px;
 }
 

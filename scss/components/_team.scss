@@ -1,4 +1,4 @@
-.sct-team {
+.team {
   padding: 94px 0;
   background-color: #f5f4fa;
   margin-left: auto;
@@ -10,18 +10,22 @@
   align-items: center;
 }
 
-.team-photo-fon {
+.team-list {
+  display: flex;
+}
+
+.team-item-photo {
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
 
-.list-photo .team-photo-fon + .team-photo-fon {
+.team-list .team-item-photo + .team-item-photo {
   margin-left: 30px;
 }
 
-.subtitle-team {
+.team-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -31,7 +35,7 @@
   margin-bottom: 50px;
 }
 
-.subtitle-name-team {
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -44,11 +48,11 @@
   margin-bottom: 10px;
 }
 
-.photo-team-scr {
+.team-photo {
   display: block;
 }
 
-.direction-team {
+.team-direction {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -57,17 +61,17 @@
   margin-bottom: 16px;
 }
 
-.icon-soc-team {
+.team-icon-list {
   display: flex;
   justify-content: center;
 }
 
-.icon-team-item {
+.team-item-icon {
   width: 44px;
   height: 44px;
 }
 
-.icon-team-link {
+.team-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,31 +80,31 @@
   border-radius: 50%;
 }
 
-.icon-team-link {
+.team-link {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-icon {
+.team-icon {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-team-link:hover,
-.icon-team-link:focus {
+.team-link:hover,
+.team-link:focus {
   background-color: var(--list-active-color);
 }
 
-.soc-icon {
+.team-icon {
   fill: #afb1b8;
 }
 
-.icon-team-link:hover .soc-icon,
-.icon-team-link:focus .soc-icon {
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
   fill: var(--color-white);
 }
 
-.icon-soc-team .icon-team-item + .icon-team-item {
+.team-icon-list .team-item-icon + .team-item-icon {
   margin-left: 10px;
 }
