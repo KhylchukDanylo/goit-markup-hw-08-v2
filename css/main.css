@@ -572,14 +572,15 @@ ul {
   justify-content: center;
 }
 
-.item-soc-footer {
+.link-icon-soc-footer {
+  border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-soc-footer:hover,
-.item-soc-footer:focus {
+.link-icon-soc-footer:hover,
+.link-icon-soc-footer:focus {
   background-color: var(--list-active-color);
 }
 
@@ -750,7 +751,7 @@ ul {
 
 .icon-btn {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 16px;
   transform: translateY(-60%);
   fill: var(--title-text-color);
