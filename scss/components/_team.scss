@@ -1,8 +1,11 @@
 .team {
-  padding: 94px 0;
+  padding: 60px 0;
   background-color: #f5f4fa;
   margin-left: auto;
   margin-right: auto;
+  @include desktop {
+    padding: 94px 0;
+  }
 }
 
 .team-box {
@@ -11,28 +14,50 @@
 }
 
 .team-list {
-  display: flex;
+
+  gap: 30px;
+  @include tablert {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    display: flex;
+  }
 }
 
 .team-item-photo {
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
+  width: 100%;
+    margin-bottom: 30px;
+    &:nth-child(4) {
+    margin-bottom: 0;
+  }
+  
+  @include tablert {
+    width: 354px;
+    margin-bottom: 0;
+    
+  }
+  @include desktop {
+    width: 270px;
+  }
 }
 
-.team-list .team-item-photo + .team-item-photo {
-  margin-left: 30px;
-}
 
 .team-subtitle {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 50px;
+  @include desktop {
+    font-size: 34px;
+  line-height: 1.23;
+  }
 }
 
 .team-name {
@@ -55,7 +80,7 @@
 .team-direction {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 16px;

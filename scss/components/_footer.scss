@@ -1,5 +1,29 @@
+.logo-font-footer {
+  background-color: #2f303a;
+  /* max-width: 1600px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0;
+}
+
 .studio-footer {
   color: var(--color-white);
+}
+
+.nav-footer {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablert {
+    // margin-left: 76px;
+    margin-right: 165px;
+  }
+  @include desktop {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 70px;
+  }
 }
 
 .logo-footer {
@@ -15,15 +39,20 @@
   text-decoration: none;
 
   margin-bottom: 20px;
-  width: 135px;
 }
+
 .addres-footer {
-  width: 231px;
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .footer-flex {
-  display: flex;
-  align-items: baseline;
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .actual-address {
@@ -57,12 +86,4 @@
 
 .tell-footer {
   margin-top: 9px;
-}
-
-.logo-font-footer {
-  background-color: #2f303a;
-  /* max-width: 1600px; */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 60px 0;
 }

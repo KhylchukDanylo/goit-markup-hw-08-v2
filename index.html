@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio-Studio</title>
     <link
       rel="stylesheet"
@@ -28,8 +29,14 @@
     <header class="logo-border">
       <div class="containter">
         <nav class="nav-blok">
-          <a class="logo" href="">Web<span class="logo-span">Studio</span></a>
-          <ul class="navigation-list">
+          <div class="menu">
+            <a class="logo" href="">Web<span class="logo-span">Studio</span></a>
+          <button class="btn-menu">
+            <svg class="icon-menu" width="24" height="16">
+                  <use href="./images/icons.svg#icon-menu_24px"></use>
+                </svg></button>
+          </div>
+          <!-- <ul class="navigation-list">
             <li class="nav-item">
               <a class="nav-link index-color-active snare-focus current" href="./index.html">Студия</a>
             </li>
@@ -55,7 +62,7 @@
                 +38 096 111 11 11</a
               >
             </li>
-          </ul>
+          </ul> -->
         </nav>
       </div>
     </header>
@@ -357,7 +364,8 @@
     <footer class="logo-font-footer">
       <div class="containter">
         <div class="footer-flex">
-          <div class="nav-footer">
+          <div class="nav-join-footer">
+            <div class="nav-footer">
             <a class="logo-footer" href="">Web<span class="studio-footer">Studio</span></a>
             <address class="addres-footer">
               <p class="actual-address">г. Киев, пр-т Леси Украинки, 26</p>
@@ -401,7 +409,8 @@
               </li>
             </ul>
           </div>
-          <div class="join-Subscribe">
+          </div>
+          <div class="join-subscribe">
             <p class="subtitle-join">Подпишитесь на рассылку</p>
 
             <form class="input-footer">

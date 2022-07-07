@@ -1,5 +1,9 @@
 .technology {
   padding-bottom: 94px;
+  display: none;
+  @include desktop {
+    display: contents;
+  }
 }
 
 .technology-list {

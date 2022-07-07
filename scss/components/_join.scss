@@ -1,5 +1,8 @@
 .join {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @include tablert {
+    margin-right: 89px;
+  }
 }
 
 .subtitle-join {
@@ -11,10 +14,15 @@
 
   color: var(--color-white);
   margin-bottom: 20px;
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .list-soc-icon-footer {
   display: flex;
+  justify-content: center;
 }
 
 .item-soc-footer {
@@ -53,4 +61,11 @@
   margin-left: 10px;
 }
 
-
+.nav-join-footer {
+  @include tablert {
+    display: flex;
+  }
+  @include desktop {
+    align-items: baseline;
+  }
+}

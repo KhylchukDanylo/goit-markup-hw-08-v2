@@ -16,8 +16,9 @@
 }
 
 .modal {
-  min-height: 581px;
-  min-width: 528px;
+  height: 609px;
+  width: 90%;
+  max-width: 450px;
 
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -29,6 +30,10 @@
   transform: translate(-50%, -50%);
 
   padding: 40px;
+  @include desktop {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .btn-icon-modal {
@@ -58,12 +63,16 @@
 .sub-title-modal {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: #212121;
   margin-bottom: 12px;
+  @include desktop {
+    font-size: 23px;
+    line-height: 1.15;
+  }
 }
 
 .name-imput-modal {
