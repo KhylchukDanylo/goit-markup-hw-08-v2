@@ -75,6 +75,13 @@
 
 .team-photo {
   display: block;
+  height: 460px;
+  @include tablert {
+    height: 374px;
+  }
+  @include desktop {
+    height: 260px;
+  }
 }
 
 .team-direction {

@@ -1,5 +1,5 @@
 .logo {
-  display: block;
+  display: none;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 24px;
@@ -9,11 +9,36 @@
 
   color: #2196f3;
   text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-left: 15px;
-  width: 134px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-left: auto;
+  @include tablert {
+    display: block;
+  }
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+    margin-left: 0;
+  }
+}
+.logo__mob {
+  display: block;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+  text-decoration: none;
+  width: 193px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  @include tablert {
+    display: none;
+  }
 }
 
 .logo-span {
@@ -23,29 +48,3 @@
 .logo-border {
   border-bottom: 1px solid #ececec;
 }
-
-.menu {
-  position: relative;
-}
-
-.btn-menu {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  padding: 12px 8px;
-  border: 0;
-  background-color: var(--color-white);
-}
-
-.icon-menu {
-  fill: #000;
-  &:hover,&:focus {
-    cursor: pointer;
-    fill: var(--list-active-color);
-  }
-}
-
-.use-menu {
-  padding: 12px 8px;
-}
-

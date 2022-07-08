@@ -27,19 +27,21 @@
     <header class="logo-border">
       <div class="containter">
         <nav class="nav-blok">
-          <a class="logo" href="">Web<span class="logo-span">Studio</span></a>
+          <div class="menu">
+            <a class="logo" href="">Web<span class="logo-span">Studio</span></a>
+          </div>
           <ul class="navigation-list">
             <li class="nav-item">
-              <a class="nav-link snare-focus" href="./index.html">Студия</a>
+              <a class="nav-link  snare-focus" href="./index.html">Студия</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link portfolio-color-active snare-focus current" href="./portfolio.html">Портфолио</a>
+              <a class="nav-link index-color-active snare-focus current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav-item"><a class="nav-link snare-focus" href="">Контакты</a></li>
           </ul>
           <ul class="contacts-header-list">
             <li class="cnt-item">
-              <a class="nav-contact snare-focus" href="mailto:info@devstudio.com">
+              <a class="nav-contact-mail snare-focus snare-focus-icon" href="mailto:info@devstudio.com">
                 <svg class="main-icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope-1"></use>
                 </svg>
@@ -47,7 +49,7 @@
               >
             </li>
             <li class="cnt-item">
-              <a class="nav-contact snare-focus" href="tel:+380961111111">
+              <a class="nav-contact-tell snare-focus snare-focus-icon" href="tel:+380961111111">
                 <svg class="main-icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
@@ -56,6 +58,48 @@
             </li>
           </ul>
         </nav>
+        <a class="logo__mob" href="">Web<span class="logo-span">Studio</span></a>
+        <button type="button" class="btn-menu" data-menu-open>
+          <svg class="icon-menu" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="containter">
+          <div class="mob-menu__top">
+            <button type="button" class="btn-menu-close" data-menu-close>
+              <svg class="icon-menu-close" width="19" height="19">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            <ul class="navigation-list__mob">
+              <li class="nav-item__mob">
+                <a class="nav-link__mob index-color-active__mob snare-focus current__mob" href="./index.html">Студия</a>
+              </li>
+              <li class="nav-item__mob">
+                <a class="nav-link__mob snare-focus__mob" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav-item__mob"><a class="nav-link__mob snare-focus__mob" href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="contacts-header-list__mob">
+              <li class="cnt-item__mob">
+                <a class="nav-contact__mob snare-focus__mob" href="tel:+380961111111"> +38 096 111 11 11</a>
+              </li>
+              <li class="cnt-item__mob">
+                <a class="nav-contact-tell__mob snare-focus__mob" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="soc-menu">
+              <li class="soc-menu__list"><a class="soc-menu-link" href="">Instagram</a></li>
+              <li class="soc-menu__list"><a class="soc-menu-link soc-menu__bef" href="">Twitter</a></li>
+              <li class="soc-menu__list"><a class="soc-menu-link soc-menu__bef" href="">Facebook</a></li>
+              <li class="soc-menu__list"><a class="soc-menu-link soc-menu__bef" href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -75,12 +119,12 @@
               <a href="" class="active-blok">
                 <div class="pos-product">
                   <img class="photo-img" src="./images/img(6)(1).jpg" alt="Технокряк" width="370" height="294" />
-                <p class="product-description">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p>
+                  <p class="product-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
-                <div class="product-fon">
+                <div class="product-fon product-fon__bot">
                   <h2 class="subtitle-product">Технокряк</h2>
                   <p class="name-sort">Веб-сайт</p>
                 </div>
@@ -90,18 +134,18 @@
               <a href="" class="active-blok">
                 <div class="pos-product">
                   <img
-                  class="photo-img"
-                  src="./images/img(7)(1).jpg"
-                  alt="Постер New Orlean vs Golden Star"
-                  width="370"
-                  height="294"
-                />
-                <p class="product-description">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p>
+                    class="photo-img"
+                    src="./images/img(7)(1).jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="product-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
-                
+
                 <div class="product-fon">
                   <h2 class="subtitle-product">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
                   <p class="name-sort">Дизайн</p>
@@ -109,14 +153,13 @@
               </a>
             </li>
             <li class="product-list-photo">
-              <a class="active-blok" href=""
-                >
+              <a class="active-blok" href="">
                 <div class="pos-product">
                   <img class="photo-img" src="./images/img(8)(1).jpg" alt="Ресторан Seafood" width="370" height="294" />
-                <p class="product-description">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p>
+                  <p class="product-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="product-fon">
                   <h2 class="subtitle-product">Ресторан <span lang="en">Seafood</span></h2>
@@ -125,15 +168,14 @@
               >
             </li>
             <li class="product-list-photo">
-              <a class="active-blok" href=""
-                >
+              <a class="active-blok" href="">
                 <div class="pos-product">
                   <img class="photo-img" src="./images/img(9)(1).jpg" alt="Проект Prime" width="370" height="294" />
-                <p class="product-description">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p>
-              </div>
+                  <p class="product-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
                 <div class="product-fon">
                   <h2 class="subtitle-product">Проект <span lang="en">Prime</span></h2>
                   <p class="name-sort">Маркетинг</p>
@@ -141,14 +183,13 @@
               >
             </li>
             <li class="product-list-photo">
-              <a class="active-blok" href=""
-                >
+              <a class="active-blok" href="">
                 <div class="pos-product">
                   <img class="photo-img" src="./images/img(9)(1).jpg" alt="Проект Boxes" width="370" height="294" />
-                <p class="product-description">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p>
+                  <p class="product-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="product-fon">
                   <h2 class="subtitle-product">Проект <span lang="en">Boxes</span></h2>
@@ -157,20 +198,19 @@
               >
             </li>
             <li class="product-list-photo">
-              <a class="active-blok" href=""
-                >
+              <a class="active-blok" href="">
                 <div class="pos-product">
                   <img
-                  class="photo-img"
-                  src="./images/img(10)(1).jpg"
-                  alt="Inspiration has no Borders"
-                  width="370"
-                  height="294"
-                />
-                <p class="product-description">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p>
+                    class="photo-img"
+                    src="./images/img(10)(1).jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="product-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="product-fon">
                   <h2 class="subtitle-product" lang="en">Inspiration has no Borders</h2>
@@ -179,20 +219,19 @@
               >
             </li>
             <li class="product-list-photo">
-              <a class="active-blok" href=""
-                >
+              <a class="active-blok" href="">
                 <div class="pos-product">
                   <img
-                  class="photo-img"
-                  src="./images/img(11)(1).jpg"
-                  alt="Издание Limited Edition"
-                  width="370"
-                  height="294"
-                />
-                <p class="product-description">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p>
+                    class="photo-img"
+                    src="./images/img(11)(1).jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="product-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="product-fon">
                   <h2 class="subtitle-product">Издание <span lang="en">Limited Edition</span></h2>
@@ -201,14 +240,13 @@
               >
             </li>
             <li class="product-list-photo">
-              <a class="active-blok" href=""
-                >
+              <a class="active-blok" href="">
                 <div class="pos-product">
                   <img class="photo-img" src="./images/img(12)(1).jpg" alt="Проект LAB" width="370" height="294" />
-                <p class="product-description">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p>
+                  <p class="product-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="product-fon">
                   <h2 class="subtitle-product">Проект LAB</h2>
@@ -217,14 +255,13 @@
               >
             </li>
             <li class="product-list-photo end-photo-product">
-              <a class="active-blok" href=""
-                >
+              <a class="active-blok" href="">
                 <div class="pos-product">
                   <img class="photo-img" src="./images/img(14)(1).jpg" alt="Growing Business" width="370" height="294" />
-                <p class="product-description">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                  посетителю получить исчерпывающие сведения о компании или частном лице.
-                </p>
+                  <p class="product-description">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
                 <div class="product-fon">
                   <h2 class="subtitle-product" lang="en">Growing Business</h2>
@@ -239,68 +276,70 @@
     <footer class="logo-font-footer">
       <div class="containter">
         <div class="footer-flex">
-          <div class="nav-footer">
-            <a class="logo-footer" href="">Web<span class="studio-footer">Studio</span></a>
-            <address class="addres-footer">
-              <p class="actual-address">г. Киев, пр-т Леси Украинки, 26</p>
-              <ul class="footer-contact-list">
-                <li class="email-footer">
-                  <a class="snare-focus footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <div class="nav-join-footer">
+            <div class="nav-footer">
+              <a class="logo-footer" href="">Web<span class="studio-footer">Studio</span></a>
+              <address class="addres-footer">
+                <p class="actual-address">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="footer-contact-list">
+                  <li class="email-footer">
+                    <a class="snare-focus footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                  <li class="tell-footer">
+                    <a class="snare-focus footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="join">
+              <p class="subtitle-join">присоединяйтесь</p>
+              <ul class="list-soc-icon-footer">
+                <li class="item-soc-footer">
+                  <a href="" class="link-icon-soc-footer icon-team-link"
+                    ><svg class="soc-icon-footer" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram-2"></use></svg
+                  ></a>
                 </li>
-                <li class="tell-footer">
-                  <a class="snare-focus footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="item-soc-footer">
+                  <a href="" class="link-icon-soc-footer icon-team-link"
+                    ><svg class="soc-icon-footer" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter-1"></use></svg
+                  ></a>
+                </li>
+                <li class="item-soc-footer">
+                  <a href="" class="link-icon-soc-footer icon-team-link"
+                    ><svg class="soc-icon-footer" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook-1"></use></svg
+                  ></a>
+                </li>
+                <li class="item-soc-footer">
+                  <a href="" class="link-icon-soc-footer icon-team-link"
+                    ><svg class="soc-icon-footer" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use></svg
+                  ></a>
                 </li>
               </ul>
-            </address>
-          </div>
-
-          <div class="join">
-            <p class="subtitle-join">присоединяйтесь</p>
-            <ul class="list-soc-icon-footer">
-              <li class="item-soc-footer">
-                <a href="" class="link-icon-soc-footer icon-team-link"
-                  ><svg class="soc-icon-footer" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram-2"></use></svg
-                ></a>
-              </li>
-              <li class="item-soc-footer">
-                <a href="" class="link-icon-soc-footer icon-team-link"
-                  ><svg class="soc-icon-footer" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
-                ></a>
-              </li>
-              <li class="item-soc-footer">
-                <a href="" class="link-icon-soc-footer icon-team-link"
-                  ><svg class="soc-icon-footer" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
-                ></a>
-              </li>
-              <li class="item-soc-footer">
-                <a href="" class="link-icon-soc-footer icon-team-link"
-                  ><svg class="soc-icon-footer" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="join-Subscribe">
-            <p class="subtitle-join">Подпишитесь на рассылку</p>
-            <div class="mail-btn-post">
-              <form class="input-footer">
-                <label for="mail">
-                  <input type="email" class="form-imput" name="mail" id="mail" placeholder="E-mail" required />
-                </label>
-                <button type="submit" class="btn-footer-mail">
-                  Подписаться
-                  <svg class="icon-btn-footer" width="24" height="24">
-                    <use href="./images/icons.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
-              </form>
             </div>
+          </div>
+          <div class="join-subscribe">
+            <p class="subtitle-join">Подпишитесь на рассылку</p>
+
+            <form class="input-footer">
+              <label for="mail">
+                <input type="email" class="form-imput" name="mail" id="mail" placeholder="E-mail" required />
+              </label>
+              <button type="submit" class="btn-footer-mail">
+                Подписаться
+                <svg class="icon-btn-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
