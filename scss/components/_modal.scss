@@ -16,9 +16,9 @@
 }
 
 .modal {
-  height: 609px;
+  height: 90%;
+  max-height: 600px;
   width: 90%;
-  max-width: 450px;
 
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,6 +30,11 @@
   transform: translate(-50%, -50%);
 
   padding: 40px;
+  @include mobile {
+    max-height: 609px;
+    width: 90%;
+    max-width: 450px;
+  }
   @include desktop {
     min-width: 528px;
     min-height: 581px;
@@ -62,13 +67,17 @@
 
 .sub-title-modal {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: #212121;
   margin-bottom: 12px;
+  @include mobile {
+    font-size: 20px;
+    line-height: 1.5;
+  }
   @include desktop {
     font-size: 23px;
     line-height: 1.15;

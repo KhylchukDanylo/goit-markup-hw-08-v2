@@ -10,9 +10,13 @@
 
 .product-list-photo {
   margin-bottom: 30px;
+  @include mobile {
+    max-width: 450px;
+    height: 404;
+  }
   @include tablert {
     margin-bottom: 0;
-    max-width: 354px;
+
     max-height: 440px;
   }
 }
@@ -59,12 +63,15 @@
 
 .photo-img {
   display: block;
-  @include tablert {
+
+  @include mobile {
+    width: 450px;
     height: 294px;
+  }
+  @include tablert {
     width: 354px;
   }
-   @include desktop {
-    height: 294px;
+  @include desktop {
     width: 370px;
   }
 }
@@ -82,6 +89,7 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
+  width: 100%;
   @include tablert {
     width: 354px;
   }
@@ -125,4 +133,5 @@
 
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
+  height: 100%;
 }

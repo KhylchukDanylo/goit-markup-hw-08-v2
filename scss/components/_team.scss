@@ -14,7 +14,6 @@
 }
 
 .team-list {
-
   gap: 30px;
   @include tablert {
     display: flex;
@@ -30,21 +29,19 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 100%;
-    margin-bottom: 30px;
-    &:nth-child(4) {
+  margin-bottom: 30px;
+  &:nth-child(4) {
     margin-bottom: 0;
   }
-  
+
   @include tablert {
     width: 354px;
     margin-bottom: 0;
-    
   }
   @include desktop {
     width: 270px;
   }
 }
-
 
 .team-subtitle {
   font-weight: 700;
@@ -56,7 +53,7 @@
   margin-bottom: 50px;
   @include desktop {
     font-size: 34px;
-  line-height: 1.23;
+    line-height: 1.23;
   }
 }
 
@@ -74,8 +71,10 @@
 }
 
 .team-photo {
-  display: block;
-  height: 460px;
+  width: 100%;
+  @include mobile {
+    height: 460px;
+  }
   @include tablert {
     height: 374px;
   }

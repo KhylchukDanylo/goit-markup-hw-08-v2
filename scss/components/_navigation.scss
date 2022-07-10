@@ -54,12 +54,16 @@
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 10px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
   text-decoration: none;
+  @include mobile {
+      font-size: 12px;
+  line-height: 1.16
+  }
   @include desktop {
       font-size: 14px;
   line-height: 1.14;
@@ -188,12 +192,16 @@
 }
 .nav-link__mob {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
+  font-size: 25px;
+  line-height: 1.15;
   letter-spacing: 0.02em;
 
   color: #212121;
   text-decoration: none;
+  @include mobile {
+      font-size: 40px;
+  line-height: 1.175;
+  }
 }
 .index-color-active__mob {
 }
@@ -213,20 +221,29 @@
 }
 .nav-contact__mob {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.176;
+  font-size: 20px;
+  line-height: 1.15;
 
   letter-spacing: 0.02em;
   color: var(--list-active-color);
   text-decoration: none;
+  @include mobile {
+      font-size: 34px;
+  line-height: 1.176;
+
+  }
 }
 .nav-contact-tell__mob {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
+  @include mobile {
+      font-size: 24px;
+  line-height: 1.16;
+  }
 }
 .soc-menu {
   display: flex;
@@ -237,13 +254,17 @@
 .soc-menu-link {
   position: relative;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 12px;
+  line-height: 1.2;
 
   letter-spacing: 0.02em;
 
   color: #2196f3;
   text-decoration: none;
+  @include mobile {
+      font-size: 18px;
+  line-height: 1.22;
+  }
 }
 
 .soc-menu__bef {
