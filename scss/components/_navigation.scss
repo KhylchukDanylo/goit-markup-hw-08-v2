@@ -61,33 +61,49 @@
   color: var(--primary-text-color);
   text-decoration: none;
   @include mobile {
-      font-size: 12px;
-  line-height: 1.16
+    font-size: 12px;
+    line-height: 1.16;
   }
   @include desktop {
-      font-size: 14px;
-  line-height: 1.14;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
 .nav-contact-mail {
   padding-top: 21px;
-  margin-bottom: 10px;
 
+  @include desktop {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.nav-contact-tell {
+  // padding-right: 15px;
+  padding-bottom: 21px;
   @include desktop {
     padding-bottom: 32px;
     padding-top: 32px;
   }
 }
 
-.nav-contact-tell {
-  padding-right: 15px;
-  padding-bottom: 21px;
-  @include desktop {
-    padding-bottom: 32px;
-    padding-top: 32px;
-    margin-left: 30px;
+.cnt-item {
+  @include tablert {
+    &:nth-child(1) {
+      margin-bottom: 10px;
+    }
   }
+  @include desktop {
+    &:nth-child(2) {
+      margin-left: 30px;
+    }
+    &:nth-child(1) {
+      margin-bottom: 0;
+    }
+  }
+  
 }
 
 .main-icon {
@@ -170,14 +186,20 @@
   height: 100vh;
   padding-top: 10px;
   padding-bottom: 48px;
+  padding-left: 40px;
   .containter {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
     overflow: auto;
+    padding-left: 0;
   }
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+}
+
+.mob-menu__top {
+  margin-bottom: 32px;
 }
 
 .icon-menu-close {
@@ -187,7 +209,7 @@
 .nav-item__mob {
   margin-bottom: 32px;
   &:nth-child(3) {
-    margin-bottom: 32px;
+    margin-bottom: 0;
   }
 }
 .nav-link__mob {
@@ -199,11 +221,12 @@
   color: #212121;
   text-decoration: none;
   @include mobile {
-      font-size: 40px;
-  line-height: 1.175;
+    font-size: 40px;
+    line-height: 1.175;
   }
 }
 .index-color-active__mob {
+  color: var(--list-active-color);
 }
 .snare-focus {
 }
@@ -212,11 +235,12 @@
 .snare-focus__mob {
 }
 .contacts-header-list__mob {
+  margin-bottom: 64px;
 }
 .cnt-item__mob {
   margin-bottom: 32px;
   &:nth-child(2) {
-    margin-bottom: 64px;
+    margin-bottom: 0;
   }
 }
 .nav-contact__mob {
@@ -228,9 +252,8 @@
   color: var(--list-active-color);
   text-decoration: none;
   @include mobile {
-      font-size: 34px;
-  line-height: 1.176;
-
+    font-size: 34px;
+    line-height: 1.176;
   }
 }
 .nav-contact-tell__mob {
@@ -241,8 +264,8 @@
   color: var(--primary-text-color);
   text-decoration: none;
   @include mobile {
-      font-size: 24px;
-  line-height: 1.16;
+    font-size: 24px;
+    line-height: 1.16;
   }
 }
 .soc-menu {
@@ -262,8 +285,8 @@
   color: #2196f3;
   text-decoration: none;
   @include mobile {
-      font-size: 18px;
-  line-height: 1.22;
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 

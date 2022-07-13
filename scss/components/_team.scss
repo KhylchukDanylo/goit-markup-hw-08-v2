@@ -71,16 +71,7 @@
 }
 
 .team-photo {
-  width: 100%;
-  @include mobile {
-    height: 460px;
-  }
-  @include tablert {
-    height: 374px;
-  }
-  @include desktop {
-    height: 260px;
-  }
+  // width: 100%;
 }
 
 .team-direction {

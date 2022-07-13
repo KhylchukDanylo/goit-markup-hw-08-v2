@@ -1,7 +1,12 @@
 .join {
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   @include tablert {
+    margin-bottom: 0px;
     margin-right: 89px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
@@ -62,10 +67,13 @@
 }
 
 .nav-join-footer {
+  margin-bottom: 60px;
   @include tablert {
     display: flex;
   }
   @include desktop {
     align-items: baseline;
+    margin-bottom: 0;
+    margin-right: 93px;
   }
 }

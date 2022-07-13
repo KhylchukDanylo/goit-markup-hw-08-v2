@@ -7,6 +7,10 @@
   }
 }
 .features-list {
+  padding-top: 60px;
+  @include mobile {
+    padding-top: 0;
+  }
   @include tablert {
     display: flex;
     flex-wrap: wrap;

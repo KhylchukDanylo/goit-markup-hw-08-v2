@@ -1,5 +1,5 @@
 .technology {
-  padding-bottom: 94px;
+  // padding-bottom: 94px;
   display: none;
   @include desktop {
     display: contents;
@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   margin: 0;
+  padding-bottom: 94px;
 }
 
 .technology-subtitle {
