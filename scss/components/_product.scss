@@ -30,6 +30,9 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .active-blok:hover,
@@ -101,7 +104,8 @@
 
 .product-fon__bot {
   @include tablert {
-    padding-bottom: 56px;
+    // padding-bottom: 56px;
+    flex-grow: 1;
   }
   @include desktop {
     padding-bottom: 20px;
@@ -120,6 +124,13 @@
 .pos-product {
   position: relative;
   overflow: hidden;
+  @include tablert {
+     max-width: 354px;
+  }
+  @include desktop {
+     max-width: 370px;
+  }
+ 
 }
 
 .product-description {

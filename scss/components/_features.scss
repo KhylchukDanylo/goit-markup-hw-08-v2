@@ -8,8 +8,10 @@
 }
 .features-list {
   padding-top: 60px;
+  padding-bottom: 60px;
   @include mobile {
     padding-top: 0;
+    padding-bottom: 0;
   }
   @include tablert {
     display: flex;

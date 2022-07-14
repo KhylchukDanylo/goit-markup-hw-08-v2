@@ -13,8 +13,8 @@
 .nav-footer {
   width: 231px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
     margin-bottom: 60px;
 
   @include tablert {
@@ -65,6 +65,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-white);
+  margin-bottom: 9px;
 }
 
 .footer-contact-list {
@@ -84,9 +85,6 @@
 } */
 
 .email-footer {
-  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
-.tell-footer {
-  margin-top: 9px;
-}
