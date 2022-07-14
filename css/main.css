@@ -41,7 +41,7 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -93,6 +93,7 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-left: auto;
+  margin-right: 93px;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -103,7 +104,6 @@ img {
   .logo {
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 93px;
     margin-left: 0;
   }
 }
@@ -142,6 +142,10 @@ img {
   display: flex;
   justify-content: center;
   max-height: 80px;
+}
+
+.logo-border .containter {
+  display: flex;
 }
 
 .navigation-list {
@@ -286,7 +290,7 @@ img {
   display: block;
   border-radius: 4px;
   position: absolute;
-  bottom: -1px;
+  bottom: -3px;
 }
 
 .btn-menu {
@@ -417,6 +421,7 @@ img {
 
 .soc-menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .soc-menu__list {
@@ -426,28 +431,24 @@ img {
 .soc-menu-link {
   position: relative;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 1.2;
+  font-size: 18px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
   text-decoration: none;
 }
-@media screen and (min-width: 480px) {
-  .soc-menu-link {
-    font-size: 18px;
-    line-height: 1.22;
-  }
-}
 
-.soc-menu__bef::before {
-  position: absolute;
-  content: "";
-  top: 10px;
-  left: -20px;
-  height: 1px;
-  width: 1px;
-  border-left: 22px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+@media screen and (min-width: 480px) {
+  .soc-menu__bef::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: -20px;
+    height: 1px;
+    width: 1px;
+    border-left: 22px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
 }
 
 .title {
@@ -666,6 +667,9 @@ img {
   .technology {
     display: contents;
   }
+  .technology .containter {
+    padding-bottom: 94px;
+  }
 }
 
 .technology-list {
@@ -673,7 +677,6 @@ img {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-bottom: 94px;
 }
 
 .technology-subtitle {
@@ -776,7 +779,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team-subtitle {
-    font-size: 34px;
+    font-size: 36px;
     line-height: 1.23;
   }
 }
@@ -963,6 +966,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .nav-footer {
+    margin-left: 0;
     margin-right: 165px;
     margin-bottom: 0;
   }
@@ -1030,7 +1034,6 @@ img {
 @media screen and (min-width: 768px) {
   .join {
     margin-bottom: 0px;
-    margin-right: 89px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1103,10 +1106,13 @@ img {
 @media screen and (min-width: 768px) {
   .nav-join-footer {
     display: flex;
+    justify-content: center;
+    padding: 0 79px;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav-join-footer {
+    padding: 0;
     align-items: baseline;
     margin-bottom: 0;
     margin-right: 93px;

@@ -41,25 +41,25 @@
             </li>
             <li class="nav-item"><a class="nav-link snare-focus" href="">Контакты</a></li>
           </ul>
-          <ul class="contacts-header-list">
-            <li class="cnt-item">
-              <a class="nav-contact-mail snare-focus snare-focus-icon" href="mailto:info@devstudio.com">
-                <svg class="main-icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope-1"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="cnt-item">
-              <a class="nav-contact-tell snare-focus snare-focus-icon" href="tel:+380961111111">
-                <svg class="main-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </nav>
+        <ul class="contacts-header-list">
+          <li class="cnt-item">
+            <a class="nav-contact-mail snare-focus snare-focus-icon" href="mailto:info@devstudio.com">
+              <svg class="main-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope-1"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="cnt-item">
+            <a class="nav-contact-tell snare-focus snare-focus-icon" href="tel:+380961111111">
+              <svg class="main-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
         <a class="logo__mob" href="">Web<span class="logo-span">Studio</span></a>
         <button type="button" class="btn-menu" data-menu-open>
           <svg class="icon-menu" width="24" height="16">
@@ -171,36 +171,42 @@
           <h2 class="technology-subtitle">Чем мы занимаемся</h2>
           <ul class="technology-list">
             <li class="technology-item">
-              <img
-                class="technology-img"
-                srcset="./images/img-5-min.jpg 1x, ./images/img@2x-5-min.jpg 2x"
-                src="./images/img-5-min.jpg"
-                alt="делать расчеты на iPad"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/technology/activity1desk-1.webp 1x, ./images/technology/activity1deskx2-1.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/technology/activity1desk-min-1.jpg 1x, ./images/technology/activity1deskx2-min-1.jpg 2x"
+                />
+                <img src="./images/technology/activity1desk-min-1.jpg" alt="верстка" width="370" height="294" />
+              </picture>
               <p class="technology-name">Десктопные приложения</p>
             </li>
             <li class="technology-item">
-              <img
-                class="technology-img"
-                srcset="./images/img-6-min.jpg 1x, ./images/img@2x-6-min.jpg 2x"
-                src="./images/img-6-min.jpg"
-                alt="выбрать шаблон для телефона"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/technology/activity1desk-2.webp 1x, ./images/technology/activity1deskx2-2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/technology/activity1desk-min-2.jpg 1x, ./images/technology/activity1deskx2-min-2.jpg 2x"
+                />
+                <img src="./images/technology/activity1desk-min-2.jpg" alt="верстка" width="370" height="294" />
+              </picture>
               <p class="technology-name">Мобильные приложения</p>
             </li>
             <li class="technology-item">
-              <img
-                class="technology-img"
-                srcset="./images/img-7-min.jpg 1x, ./images/img@2x-7-min.jpg 2x"
-                src="./images/img-7-min.jpg"
-                alt="выбрать цвет из цветовой схемы"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/technology/activity1desk-3.webp 1x, ./images/technology/activity1deskx2-3.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/technology/activity1desk-min-3.jpg 1x, ./images/technology/activity1deskx2-min-3.jpg 2x"
+                />
+                <img src="./images/technology/activity1desk-min-3.jpg" alt="верстка" width="370" height="294" /> </picture
+              >
               <p class="technology-name">Дизайнерские решения</p>
             </li>
           </ul>
@@ -213,14 +219,22 @@
           <ul class="team-list">
             <!-- Игорь Демьяненко -->
             <li class="team-item-photo">
-              <img
-                class="team-photo"
-                srcset="./images/img-1-min.jpg 1x, ./images/img@2x-1-min.jpg 2x"
-                src="./images/img-1-min.jpg"
-                alt="photo Igor Demyanenko"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/member1mob-min.jpg 1x, ./images/team/member1mobx2-min.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/member1tab-min.jpg 1x, ./images/team/member1tabx2-min.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/member1desk-min.jpg 1x, ./images/team/member1desx2-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/team/member1mob-min.jpg" alt="Член команды Игорь Демьяненко" width="450" />
+              </picture>
+
               <div class="team-box">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p lang="en" class="team-direction">Product Designer</p>
@@ -257,14 +271,22 @@
             <!-- Ольга Репина -->
 
             <li class="team-item-photo">
-              <img
-                class="team-photo"
-                srcset="./images/img-2-min.jpg 1x, ./images/img@2x-2-min.jpg 2x"
-                src="./images/img.jpg"
-                alt="photo Olga Repina"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/member2mob-min.jpg 1x, ./images/team/member2mobx2-min.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/member2tab-min.jpg 1x, ./images/team/member2tabx2-min.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/member2desk-min.jpg 1x, ./images/team/member2deskx2-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <img src="./images/team/member2mob-min.jpg" alt="Член команды Ольга Репина" width="450" />
+              </picture>
               <div class="team-box">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p lang="en" class="team-direction">Frontend Developer</p>
@@ -301,14 +323,21 @@
             <!-- Николай Тарасов -->
 
             <li class="team-item-photo">
-              <img
-                class="team-photo"
-                srcset="./images/img-3-min.jpg 1x, ./images/img@2x-3-min.jpg 2x"
-                src="./images/img(2).jpg"
-                alt="photo Nikolai Tarasov"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/member3mob-min.jpg 1x, ./images/team/member3mobx2-min.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/member3tab-min.jpg 1x, ./images/team/member3tabx2-min.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/member3desk-min.jpg 1x, ./images/team/member3deskx2-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/nicolas.jpg" alt="Член команды Николай Тарасов" width="450" />
+              </picture>
 
               <div class="team-box">
                 <h3 class="team-name">Николай Тарасов</h3>
@@ -346,14 +375,21 @@
             <!-- Михаил Ермаков -->
 
             <li class="team-item-photo">
-              <img
-                class="team-photo"
-                srcset="./images/img-4-min.jpg 1x, ./images/img@2x-4-min.jpg 2x"
-                src="./images/img(3).jpg"
-                alt="photo Mikhail Ermakov"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/team/member4mob-min.jpg 1x, ./images/team/member4mobx2-min.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/team/member4tab-min.jpg 1x, ./images/team/member4tabx2-min.jpg 2x"
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/team/member4desk-min.jpg 1x, ./images/team/member4deskx2-min.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/member4mob-min.jpg" alt="Член команды Николай Тарасов" width="450" />
+              </picture>
 
               <div class="team-box">
                 <h3 class="team-name">Михаил Ермаков</h3>
@@ -438,68 +474,67 @@
     <!-- end title -->
     <footer class="logo-font-footer">
       <div class="containter footer-flex">
-          <div class="nav-join-footer">
-            <div class="nav-footer">
-              <a class="logo-footer" href="">Web<span class="studio-footer">Studio</span></a>
-              <address class="addres-footer">
-                <p class="actual-address">г. Киев, пр-т Леси Украинки, 26</p>
-                <ul class="footer-contact-list">
-                  <li class="email-footer">
-                    <a class="snare-focus footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                  </li>
-                  <li class="tell-footer">
-                    <a class="snare-focus footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
-                  </li>
-                </ul>
-              </address>
-            </div>
-
-            <div class="join">
-              <p class="subtitle-join">присоединяйтесь</p>
-              <ul class="list-soc-icon-footer">
-                <li class="item-soc-footer">
-                  <a href="" class="link-icon-soc-footer icon-team-link"
-                    ><svg class="soc-icon-footer" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram-2"></use></svg
-                  ></a>
+        <div class="nav-join-footer">
+          <div class="nav-footer">
+            <a class="logo-footer" href="">Web<span class="studio-footer">Studio</span></a>
+            <address class="addres-footer">
+              <p class="actual-address">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="footer-contact-list">
+                <li class="email-footer">
+                  <a class="snare-focus footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="item-soc-footer">
-                  <a href="" class="link-icon-soc-footer icon-team-link"
-                    ><svg class="soc-icon-footer" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter-1"></use></svg
-                  ></a>
-                </li>
-                <li class="item-soc-footer">
-                  <a href="" class="link-icon-soc-footer icon-team-link"
-                    ><svg class="soc-icon-footer" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook-1"></use></svg
-                  ></a>
-                </li>
-                <li class="item-soc-footer">
-                  <a href="" class="link-icon-soc-footer icon-team-link"
-                    ><svg class="soc-icon-footer" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-                  ></a>
+                <li class="tell-footer">
+                  <a class="snare-focus footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
               </ul>
-            </div>
+            </address>
           </div>
-          <div class="join-subscribe">
-            <p class="subtitle-join">Подпишитесь на рассылку</p>
 
-            <form class="input-footer">
-              <label for="mail">
-                <input type="email" class="form-imput" name="mail" id="mail" placeholder="E-mail" required />
-              </label>
-              <button type="submit" class="btn-footer-mail">
-                Подписаться
-                <svg class="icon-btn-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </form>
+          <div class="join">
+            <p class="subtitle-join">присоединяйтесь</p>
+            <ul class="list-soc-icon-footer">
+              <li class="item-soc-footer">
+                <a href="" class="link-icon-soc-footer icon-team-link"
+                  ><svg class="soc-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use></svg
+                ></a>
+              </li>
+              <li class="item-soc-footer">
+                <a href="" class="link-icon-soc-footer icon-team-link"
+                  ><svg class="soc-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
+                ></a>
+              </li>
+              <li class="item-soc-footer">
+                <a href="" class="link-icon-soc-footer icon-team-link"
+                  ><svg class="soc-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
+                ></a>
+              </li>
+              <li class="item-soc-footer">
+                <a href="" class="link-icon-soc-footer icon-team-link"
+                  ><svg class="soc-icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
+                ></a>
+              </li>
+            </ul>
           </div>
-        
+        </div>
+        <div class="join-subscribe">
+          <p class="subtitle-join">Подпишитесь на рассылку</p>
+
+          <form class="input-footer">
+            <label for="mail">
+              <input type="email" class="form-imput" name="mail" id="mail" placeholder="E-mail" required />
+            </label>
+            <button type="submit" class="btn-footer-mail">
+              Подписаться
+              <svg class="icon-btn-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 

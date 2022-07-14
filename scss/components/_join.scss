@@ -2,7 +2,6 @@
   // margin-bottom: 60px;
   @include tablert {
     margin-bottom: 0px;
-    margin-right: 89px;
   }
   @include desktop {
     margin-bottom: 0;
@@ -70,8 +69,11 @@
   margin-bottom: 60px;
   @include tablert {
     display: flex;
+    justify-content: center;
+    padding: 0 79px;
   }
   @include desktop {
+    padding: 0;
     align-items: baseline;
     margin-bottom: 0;
     margin-right: 93px;

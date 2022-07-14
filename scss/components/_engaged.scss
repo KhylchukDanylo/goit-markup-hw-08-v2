@@ -3,6 +3,9 @@
   display: none;
   @include desktop {
     display: contents;
+    & .containter {
+      padding-bottom: 94px;
+    }
   }
 }
 
@@ -11,7 +14,7 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  padding-bottom: 94px;
+  // padding-bottom: 94px;
 }
 
 .technology-subtitle {
