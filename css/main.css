@@ -1591,13 +1591,11 @@ img {
 @media screen and (min-width: 480px) {
   .product-list-photo {
     max-width: 450px;
-    height: 404;
   }
 }
 @media screen and (min-width: 768px) {
   .product-list-photo {
     margin-bottom: 0;
-    max-height: 440px;
   }
 }
 
@@ -1684,6 +1682,7 @@ img {
 @media screen and (min-width: 768px) {
   .product-fon {
     width: 354px;
+    flex-grow: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1692,11 +1691,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .product-fon__bot {
-    flex-grow: 1;
-  }
-}
 @media screen and (min-width: 1200px) {
   .product-fon__bot {
     padding-bottom: 20px;
